@@ -110,4 +110,5 @@ autoload -U ~/.my_zsh_functions/smount
 autoload -U ~/.my_zsh_functions/getkblayout
 autoload -U ~/.my_zsh_functions/xkb
 autoload -U ~/.my_zsh_functions/vpnconnect
+autoload -U ~/.my_zsh_functions/dotfiles-download
 
