@@ -1,0 +1,5 @@
+myhelp() {# Набор хелпов
+    echo "Error opening terminal: rxvt-unicode-256color. :: export TERM=xterm-256color"
+}
+
+

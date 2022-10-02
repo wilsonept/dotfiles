@@ -1,0 +1,3 @@
+xkb() { # Чинит переключение языка с клавиатуры
+    setxkbmap 'us,ru' -option grp:ctrl_shift_toggle -option caps:esc
+}

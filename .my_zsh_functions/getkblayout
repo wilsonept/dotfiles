@@ -1,0 +1,5 @@
+getkblayout() { # Возвращает тукущий лейаут клавиатуры
+    layout=`xset -q | grep 'LED' | cut -c59-67`
+    if [[ $layout = 00001002 ]]; then echo 'ru'; else echo 'en'; fi
+}
+

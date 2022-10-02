@@ -1,0 +1,3 @@
+cmount() { # Mount c$ directory of specified host to /mnt folder
+    sudo mount.cifs \\\\$1\\c$ /mnt -o username=zaharchenko domain=INTER.local
+}

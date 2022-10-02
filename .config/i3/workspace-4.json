@@ -1,0 +1,21 @@
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 480,
+       "width": 968,
+       "x": 0,
+       "y": 0
+    },
+    "name": "zaharchenko@pc503486-a: ~",
+    "percent": 1,
+    "swallows": [
+       {
+        "class": "^URxvt$",
+        "instance": "^rxvt\\-unicode$"
+       }
+    ],
+    "type": "con"
+}
+

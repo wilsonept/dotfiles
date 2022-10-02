@@ -1,0 +1,88 @@
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 556,
+       "width": 884,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    //"name": "u@pc503486:~",
+    "percent": 0.6,
+    "swallows": [
+       {
+       "class": "^UXTerm$",
+       "instance": "^xTerm",
+       "title": "^u\\@pc503486\\:\\~$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "marks": [],
+    "percent": 0.4,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splitv",
+            "marks": [],
+            "percent": 0.4,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 1,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 556,
+                       "width": 884,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "marks": [],
+                    //"name": "u@pc503486:~",
+                    "percent": 1,
+                    "swallows": [
+                       {
+                       "class": "^UXTerm$",
+                       "instance": "^xTerm",
+                       "title": "^u\\@pc503486\\:\\~$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 556,
+               "width": 884,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            //"name": "u@pc503486:~",
+            "percent": 0.6,
+            "swallows": [
+               {
+               "class": "^UXTerm$",
+               "instance": "^xTerm",
+               "title": "^u\\@pc503486\\:\\~$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

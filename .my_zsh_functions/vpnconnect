@@ -1,0 +1,7 @@
+# Подключение к рабочему VPN.
+password=$(pass aerodisk/vpn__d.zaharchenko | head -1)
+echo $password | sudo openconnect --user d.zaharchenko \
+			      --authgroup GROUP2 \
+			      --servercert pin-sha256:DdgRBQ2Xp9h3GSIIfvv+G+kfAoDbIvwOc1HOFM5/qtw= \
+			      --passwd-on-stdin \
+			      109.73.36.242 

@@ -1,0 +1,21 @@
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 373,
+       "width": 764,
+       "x": 1154,
+       "y": 2025
+    },
+    "name": "New Tab - Google Chrome",
+    "percent": 1,
+    "swallows": [
+       {
+        "class": "^Chromium$",
+        "instance": "^chromium$"
+       }
+    ],
+    "type": "con"
+}
+

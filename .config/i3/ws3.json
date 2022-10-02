@@ -1,0 +1,21 @@
+{
+    "border": "none",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 456,
+       "width": 610,
+       "x": 0,
+       "y": 0
+    },
+    "name": "Remmina Remote Desktop Client",
+    "percent": 1,
+    "swallows": [
+       {
+        "class": "^org\\.remmina\\.Remmina$",
+        "instance": "^org\\.remmina\\.Remmina$"
+       }
+    ],
+    "type": "con"
+}
+
