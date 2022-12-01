@@ -75,3 +75,9 @@
 (setq projectile-project-search-path (list "~/projects" "~/projects/org"))
 ;;(projectile-reset-known-projects)
 #+end_src
+
+* TODO Включаем translate-google
+#+begin_src elisp :results silent :eval no
+(require 'google-translate)
+(require 'google-translate-default-ui)
+#+end_src

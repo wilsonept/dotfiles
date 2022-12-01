@@ -100,6 +100,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias wat="trans -l tr -t ru"
+alias wut="trans -l en -t ru"
+alias wot="trans -l ru -t en+tr"
+
 alias dotfiles="git --git-dir=$HOME/projects/dotfiles/ --work-tree=$HOME/"
 
 fpath=(~/.my_zsh_functions $fpath);

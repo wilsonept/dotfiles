@@ -45,3 +45,6 @@
 
 (setq projectile-project-search-path (list "~/projects" "~/projects/org"))
 ;;(projectile-reset-known-projects)
+
+(require 'google-translate)
+(require 'google-translate-default-ui)
