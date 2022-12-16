@@ -21,9 +21,16 @@
 (setq display-line-numbers-type t)
 #+end_src
 
-* Включаем ограничительную черту.
-#+begin_src elisp
+* Включаем ограничительную черту и автоперенос строки.
+#+begin_src elisp :results output silent
 (global-display-fill-column-indicator-mode)
+(add-hook 'org-mode-hook '(lambda () (setq fill-column 72)))
+(add-hook 'org-mode-hook 'turn-on-auto-fill)
+#+end_src
+
+* Настройка py-flake8
+#+begin_src elisp :results output silent
+(setq flycheck-flake8-maximum-line-length 88)
 #+end_src
 
 * Настраиваем unicode
@@ -68,7 +75,6 @@
 (setq org-hide-emphasis-markers t)
 ;;(org-mode-restart)
 #+end_src
-
 
 * Настраиваем projectile.
 #+begin_src elisp :results silent

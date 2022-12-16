@@ -8,6 +8,10 @@
 (setq display-line-numbers-type t)
 
 (global-display-fill-column-indicator-mode)
+(add-hook 'org-mode-hook '(lambda () (setq fill-column 72)))
+(add-hook 'org-mode-hook 'turn-on-auto-fill)
+
+(setq flycheck-flake8-maximum-line-length 88)
 
 (prefer-coding-system 'utf-8)
 (set-default-coding-systems 'utf-8)
