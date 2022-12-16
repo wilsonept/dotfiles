@@ -1,8 +1,6 @@
 [tool.black]
 line-length = 88
-include = '\.pyi?$'
-skip-string-normalization
-# 'extend-exclude' excludes files or directories in addition to the defaults
+skip-string-normalization = true
 extend-exclude = '''
 # A regex preceded with ^/ will apply only to files and directories
 # in the root of the project.
