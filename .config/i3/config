@@ -16,6 +16,9 @@ exec ~/.config/i3/xkb.sh
 # Keybind for reparing ctrl+shift RU/US toggler if broken
 bindsym $mod+T exec ~/.config/i3/xkb.sh
 
+# Mouse sensitivity configuration
+exec ~/.config/i3/mousesensitivity.sh
+
 # Gestures for touchpad
 exec libinput-gestures-setup start
 bindsym $mod+Tab workspace next
