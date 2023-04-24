@@ -11,26 +11,28 @@
 
 # Set ctrl+shift to toggle between RU and US
 # and remap Caps_Lock with Escape
-exec ~/.config/i3/xkb.sh
-
+exec_always --no-startup-id ~/.config/i3/xkb.sh
 # Keybind for reparing ctrl+shift RU/US toggler if broken
 bindsym $mod+T exec ~/.config/i3/xkb.sh
 
 # Mouse sensitivity configuration
-exec ~/.config/i3/mousesensitivity.sh
+# Закоментировано, так как скрипт адаптирован для работы через udev.
+# Необходимо его доработать для запуска от сюда.
+# exec_always --no-startup-id ~/.config/i3/mousesensitivity.sh
 
 # Gestures for touchpad
-exec libinput-gestures-setup start
+exec --no-startup-id libinput-gestures-setup start
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
 set $mod Mod4
-#set $PrimaryM DVI-D-0
-#set $SecondaryM DVI-I-1
+set $PrimaryM eDP
+set $SecondaryM HDMI-A-0
 #set $ThirdM HDMI-0
 
 # Setting monitor position
-exec xrandr --output $PrimaryM --primary --auto --above $SecondaryM
+# exec xrandr --output HDMI-A-0 --mode 1920x1080
+# exec xrandr --output $PrimaryM --primary --auto --above $SecondaryM
 
 for_window [class="^.*"] border pixel 3
 
@@ -246,6 +248,9 @@ bindsym XF86MonBrightnessUp exec sudo /home/zaharchenko/.config/i3/brght.py up
 #bindsym $mod+Shift+B exec ~/.config/i3/Lock.sh
 bindsym $mod+Shift+B exec /usr/bin/i3lock-fancy -p
 
+# Terminal scrolling speed
+exec xset r rate 250 30
+
 # Layouts
 # Layout 3
 #exec --no-startup-id "i3-msg 'workspace 3; append_layout ~/.config/i3/ws3.json'" 
@@ -263,6 +268,7 @@ bindsym $mod+Shift+B exec /usr/bin/i3lock-fancy -p
 
 # Screenshots
 bindsym Print exec scrot --focused ~/shot/
+bindsym $mod+Print exec flameshot gui
 
 
 # cniiag monitor

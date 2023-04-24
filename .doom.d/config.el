@@ -32,6 +32,10 @@
         "#+STARTUP: hideblocks\n%?"
         :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
         :unnarrowed t)
+       ("a" "Ansible multifile" plain
+        (file "~/projects/org/roam/templates/ansible_multifile_template.org")
+        :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
+        :unnarrowed t)
        ("l" "Programming language" plain
         "#+STARTUP: hideblocks\n\n* Описание.\n%?\n\n* Пример.\n"
         :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
@@ -52,3 +56,24 @@
 
 (require 'google-translate)
 (require 'google-translate-default-ui)
+
+;; Sample jar configuration
+
+(setq plantuml-jar-path "/home/zaharchenko/.emacs.d/.local/etcplantuml.jar")
+(setq plantuml-default-exec-mode 'jar)
+
+;; Sample executable configuration
+(setq plantuml-executable-path "/usr/bin/dot")
+(setq plantuml-default-exec-mode 'executable)
+
+;; Предварительно не забудь добавить установку пакета в packages.el
+(require 'ox-pandoc)
+
+(require 'org-timer)
+(setq org-timer-default-timer 60)
+(add-hook 'org-timer-done-hook
+          (lambda ()
+            (message-box "Время на анжумання и перекус!")))
+
+(setq gptel-api-key "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")
+(setq gptel-model "gpt-3.5-turbo")

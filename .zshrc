@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/zaharchenko/.nvm/versions/node/v12.8.1/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -106,6 +107,11 @@ alias wot="trans -l ru -t en+tr"
 
 alias dotfiles="git --git-dir=$HOME/projects/dotfiles/ --work-tree=$HOME/"
 
+# fcl command.
+root="/home/zaharchenko/projects/fcl"
+venv="venv/bin/python3"
+alias fcl="$root/$venv $root/fcl.py"
+
 fpath=(~/.my_zsh_functions $fpath);
 autoload -U ~/.my_zsh_functions/myhelp
 autoload -U ~/.my_zsh_functions/backup
@@ -115,4 +121,8 @@ autoload -U ~/.my_zsh_functions/getkblayout
 autoload -U ~/.my_zsh_functions/xkb
 autoload -U ~/.my_zsh_functions/vpnconnect
 autoload -U ~/.my_zsh_functions/dotfiles-download
+autoload -U ~/.my_zsh_functions/sputnik-run
+autoload -U ~/.my_zsh_functions/sputnik-enter
+autoload -U ~/.my_zsh_functions/etunnel
+autoload -U ~/.my_zsh_functions/dmztunnel
 

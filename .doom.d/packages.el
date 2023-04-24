@@ -48,3 +48,18 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
+
+(package! ox-pandoc)
+(package! ox-gfm)
+
+(package! websocket)
+(package! org-roam-ui)
+
+;; chatGPT module
+(package! gptel
+  :recipe (:host github :repo "karthink/gptel"))
+
+;; Postman analog for org-mode
+(package! verb)
+
+(package! web-beautify)

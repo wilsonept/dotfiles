@@ -4,9 +4,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(google-translate py-isort yapfify asn1-mode org-tree-slide))
+   '(ox-pandoc pandoc ox-gfm plantuml-mode google-translate py-isort yapfify asn1-mode org-tree-slide))
  '(safe-local-variable-values
-   '((ssh-deploy-async . 0)
+   '((ssh-deploy-on-explicit-save)
+     (ssh-deploy-force-on-explicit-save . 0)
+     (ssh-deploy-force-on-explicit-save)
+     (ssh-deploy-async . 0)
      (ssh-deploy-debug . 1)
      (ssh-deploy-on-explicit-save . 0)
      (ssh-deploy-force-on-explicit-save . 1)

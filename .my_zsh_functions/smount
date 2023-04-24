@@ -1,0 +1,3 @@
+smount() { # Mount qwe directory
+    sudo mount -t cifs -o username=qwe,password=qwe '//192.168.1.82/R00_SHARE' /mnt/qwe
+}

@@ -32,6 +32,9 @@ URxvt*dynamicColors:        on
 URxvt.iso14755:             false
 URxvt.iso14755_52:          false
 
+! Faster scrolling and typing
+URxvt.keysym.sym315:        0x1000020
+
 ! Fonts
 URxvt.allow_bold:           false
 /* URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
