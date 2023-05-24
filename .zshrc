@@ -112,6 +112,10 @@ root="/home/zaharchenko/projects/fcl"
 venv="venv/bin/python3"
 alias fcl="$root/$venv $root/fcl.py"
 
+# deluge torrent client
+alias torrent="deluge"
+
+# load custom functions
 fpath=(~/.my_zsh_functions $fpath);
 autoload -U ~/.my_zsh_functions/myhelp
 autoload -U ~/.my_zsh_functions/backup
