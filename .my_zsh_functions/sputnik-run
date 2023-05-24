@@ -1,0 +1,4 @@
+sputnik-run() {# Запускает спутник.
+    cd ~/projects/updater_for_sputnik
+    sudo docker-compose build && sudo docker-compose up
+}

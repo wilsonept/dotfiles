@@ -1,0 +1,7 @@
+# Скачивает проект dotfiles с github.com для раскатки по системе.
+git clone --separate-git-dir=$HOME/projects/dotfiles \
+          git@github.com:wilsonept/dotfiles.git \
+          /tmp/dotfiles
+
+# Раскатывает по системе файлы.
+sync --recursive --verbose --exclude '.git' /tmp/dotfiles/ $HOME/
