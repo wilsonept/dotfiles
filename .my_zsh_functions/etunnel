@@ -1,8 +1,10 @@
-LOCALADDR=127.0.0.1
-LOCALPORT=59999
-DESTADDR=192.168.54.88
-DESTPORT=80
-
 etunnel () { # Подключается к энжину с пробросом локального порта 59999, эта команда позволит заходить на вебку энжина по адресу 127.0.0.1:59999.
-    ssh -L "$LOCALADDR:$LOCALPORT:$DESTADDR:$DESTPORT e0" && \
+
+    LOCALADDR='127.0.0.1'
+    LOCALPORT=59999
+    DESTADDR='192.168.54.88'
+    DESTPORT=80
+
+    echo "connect to http://$LOCALADDR:$LOCALPORT"
+    ssh -L "$LOCALADDR:$LOCALPORT:$DESTADDR:$DESTPORT" e0
 }
