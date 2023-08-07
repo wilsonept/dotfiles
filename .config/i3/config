@@ -241,6 +241,7 @@ bindsym $mod+plus exec /home/zaharchenko/.config/i3/volmgr.sh up
 bindsym $mod+minus exec /home/zaharchenko/.config/i3/volmgr.sh down
 
 # Screen Brightness
+# NOTE: xev used for getting key names
 bindsym XF86MonBrightnessDown exec sudo /home/zaharchenko/.config/i3/brght.py down
 bindsym XF86MonBrightnessUp exec sudo /home/zaharchenko/.config/i3/brght.py up
 

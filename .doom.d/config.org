@@ -61,6 +61,10 @@
         (file "~/projects/org/roam/templates/ansible_multifile_template.org")
         :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
         :unnarrowed t)
+       ("f" "New feature" plain
+        (file "~/projects/org/roam/templates/feature_template.org")
+        :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
+        :unnarrowed t)
        ("l" "Programming language" plain
         "#+STARTUP: hideblocks\n\n* Описание.\n%?\n\n* Пример.\n"
         :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")

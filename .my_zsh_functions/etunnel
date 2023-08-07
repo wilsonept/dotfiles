@@ -5,6 +5,6 @@ etunnel () { # Подключается к энжину с пробросом л
     DESTADDR='192.168.54.88'
     DESTPORT=80
 
-    echo "connect to http://$LOCALADDR:$LOCALPORT"
-    ssh -L "$LOCALADDR:$LOCALPORT:$DESTADDR:$DESTPORT" e0
+    echo "connect to http://${LOCALADDR}:${LOCALPORT}"
+    ssh -L "${LOCALADDR}:${LOCALPORT}:${DESTADDR}:${DESTPORT}" e0
 }

@@ -95,6 +95,13 @@ alias ll='ls -alh --sort=time --color=auto'
 #alias la='ls -A'
 #alias l='ls -CF'
 
+# vAir bare repository for testing, may be deleted
+alias vair-static='/usr/bin/git \
+                       --git-dir=$HOME/vair-bare \
+                       --work-tree=/'
+alias vs=vair-static
+
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.

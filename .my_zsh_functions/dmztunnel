@@ -1,3 +1,10 @@
 dmztunnel () { # Подключается к энжину с пробросом локального порта 59999, эта команда позволит заходить на вебку энжина по адресу 127.0.0.1:59999.
-    ssh -L 127.0.0.1:59999:192.168.12.5:80 dmz1
+
+    LOCALADDR='127.0.0.1'
+    LOCALPORT=58888
+    DESTADDR='192.168.12.5'
+    DESTPORT=80
+
+    echo "connect to http://${LOCALADDR}:${LOCALPORT}"
+    ssh -L "${LOCALADDR}:${LOCALPORT}:${DESTADDR}:${DESTPORT}" dmz1
 }

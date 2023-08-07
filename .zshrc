@@ -129,4 +129,5 @@ autoload -U ~/.my_zsh_functions/sputnik-run
 autoload -U ~/.my_zsh_functions/sputnik-enter
 autoload -U ~/.my_zsh_functions/etunnel
 autoload -U ~/.my_zsh_functions/dmztunnel
+autoload -U ~/.my_zsh_functions/zbuildertunnel
 
