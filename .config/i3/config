@@ -20,6 +20,29 @@ bindsym $mod+T exec ~/.config/i3/xkb.sh
 # Необходимо его доработать для запуска от сюда.
 # exec_always --no-startup-id ~/.config/i3/mousesensitivity.sh
 
+# Custom workspaces
+set $workspace11 messengers
+bindsym $mod+P workspace $workspace11
+bindsym $mod+Shift+P move container to workspace $workspace11
+
+set $workspace12 bg
+bindsym $mod+O workspace $workspace12
+bindsym $mod+Shift+O move container to workspace $workspace12
+
+set $workspace13 remote
+bindsym $mod+U workspace $workspace13
+bindsym $mod+Shift+U move container to workspace $workspace13
+
+set $workspace14 draw
+bindsym $mod+Y workspace $workspace14
+bindsym $mod+Shift+Y move container to workspace $workspace14
+
+set $workspace15 browser
+bindsym $mod+I workspace $workspace15
+bindsym $mod+Shift+I move container to workspace $workspace15
+bindsym $mod+İ workspace $workspace15
+bindsym $mod+Shift+İ move container to workspace $workspace15
+
 # Gestures for touchpad
 exec --no-startup-id libinput-gestures-setup start
 bindsym $mod+Tab workspace next
@@ -166,16 +189,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym l resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym j resize shrink height 10 px or 10 ppt
-        bindsym h resize grow width 10 px or 10 ppt
+        bindsym l resize shrink width 10 px or 2 ppt
+        bindsym k resize grow height 10 px or 2 ppt
+        bindsym j resize shrink height 10 px or 2 ppt
+        bindsym h resize grow width 10 px or 2 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 10 px or 2 ppt
+        bindsym Down resize grow height 10 px or 2 ppt
+        bindsym Up resize shrink height 10 px or 2 ppt
+        bindsym Right resize grow width 10 px or 2 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"

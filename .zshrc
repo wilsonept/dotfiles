@@ -115,6 +115,10 @@ alias fcl="$root/$venv $root/fcl.py"
 # deluge torrent client
 alias torrent="deluge"
 
+# beep sound
+alias beep="paplay /usr/share/sounds/freedesktop/stereo/message.oga"
+alias bell="paplay /usr/share/sounds/freedesktop/stereo/bell.oga"
+
 # load custom functions
 fpath=(~/.my_zsh_functions $fpath);
 autoload -U ~/.my_zsh_functions/myhelp

@@ -1,0 +1,10 @@
+wtftunnel () { # Подключается к энжину с пробросом локального порта 57777, эта команда позволит заходить на вебку энжина по адресу 127.0.0.1:57777.
+
+    LOCALADDR='127.0.0.1'
+    LOCALPORT=57777
+    DESTADDR='192.168.11.134'
+    DESTPORT=80
+
+    echo "connect to http://${LOCALADDR}:${LOCALPORT}"
+    ssh -L "${LOCALADDR}:${LOCALPORT}:${DESTADDR}:${DESTPORT}" s1
+}
